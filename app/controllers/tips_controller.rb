@@ -8,6 +8,6 @@ class TipsController < ApplicationController
       req.params['text'] = params[:tip]
     end
     redirect_to tips_path
-
+  end 
 
 end
