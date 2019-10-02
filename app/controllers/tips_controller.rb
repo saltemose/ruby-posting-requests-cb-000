@@ -8,7 +8,7 @@ class TipsController < ApplicationController
       req.params['text'] = params[:tip]
     end
     redirect_to tips_path
-  end 
+  end
 
   def index
     resp = Faraday.get("https://api.foursquare.com/v2/lists/self/tips") do |req|
